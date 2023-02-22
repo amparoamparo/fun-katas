@@ -1,4 +1,4 @@
-const dnaPairs = require('../01-dna-pairs');
+const dnaPairs = require('../01-dna-pairs/01-dna-pairs');
 
 describe('dnaPairs', () => {
   test('when passed an empty string, return an empty array', () => {
