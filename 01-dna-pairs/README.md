@@ -1,10 +1,10 @@
 # DNA Pairs
 
-Create a function that takes a string of DNA and matches each base with its pair, returning a nested array. In DNA, C pairs with G and T pairs with A.
+Create a function that takes a string of DNA and matches each base with its pair, returning a nested array. In DNA, C pairs with G, and T pairs with A.
 
 ## Examples
 
-Here are some examples below.
+Here are some examples:
 
 ```js
 dnaPair("G");
