@@ -13,26 +13,6 @@ Your function should return a new array, where all objects that were missing a l
 
 This function must be a pure function, i.e. it should have no side effects, and your test suite should reflect this.
 
-Examples
---------
-
-updateRemoteStudents([{ name: 'Euler', age: 27 }]);
-Should return:
-[{ name: 'Euler', age: 27, location: 'remote' }];
-All objects with existing locations should remain unchanged.
-
-updateRemoteStudents([
-  { name: 'Hypatia', age: 31, location: 'leeds' },
-  { name: 'Ramanujan', age: 22 },
-  { name: 'Tao', age: 47, location: 'manchester' }
-]);
-Should return:
-[
-  { name: 'Hypatia', age: 31, location: 'leeds' },
-  { name: 'Ramanujan', age: 22, location: 'remote' },
-  { name: 'Tao', age: 47, location: 'manchester' }
-];
-
 */
 
 function updateRemoteStudents(students) {
