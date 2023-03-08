@@ -1,7 +1,6 @@
 const calculateDivisors = require('../03-calculate-divisors/03-calculate-divisors');
 
 describe('calculateDivisors', () => {
-  
   test('when passed 0, return 0', () => {
     expect(calculateDivisors(0)).toBe(0);
   });

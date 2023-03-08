@@ -1,6 +1,6 @@
-// Please do not change the name of this function
-function updateRemoteStudents (str) {
-  // Your code here
+
+function updateRemoteStudents(str) {
+  
 }
 
 module.exports = updateRemoteStudents;
