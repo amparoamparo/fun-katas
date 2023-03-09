@@ -25,14 +25,7 @@ const till = {
   "£20": 1,
   "£50": 1
 };
-You can use these examples to start building up your test suite
 
-till({ "1p": 1, "2p": 1 });
-// should return "£0.03"
-till({ "1p": 1, "2p": 1, "5p": 1, "10p": 1, "20p": 1 });
-// should return "£0.38"
-till({ "5p": 1, "10p": 1, "20p": 1, "50p": 1, "£1": 1 });
-// should return "£1.85"
 */
 
 function tillAddition(cash) {
