@@ -39,10 +39,11 @@ function tillAddition(cash) {
   
   let penceTotal = 0;
 
-  const gbp = new Intl.NumberFormat('en-GB', {
-    style: 'currency',
-    currency: 'GBP'
-  });
+  // with Intl.NumberFormat()
+  // const gbp = new Intl.NumberFormat('en-GB', {
+  //   style: 'currency',
+  //   currency: 'GBP'
+  // });
   
   for (const [denomination, amount] of Object.entries(cash)) {
     if (denomination.includes("p")) {
@@ -52,8 +53,13 @@ function tillAddition(cash) {
     }  
   }
   
-  const result = gbp.format(penceTotal / 100);
+  // without Intl.NumberFormat()
+  const totalInPounds = (penceTotal / 100).toFixed(2);
+  const result = `£${totalInPounds}`;
 
+  // with Intl.NumberFormat()
+  // const result = gbp.format(penceTotal / 100);
+  
   return result;
 };
 
